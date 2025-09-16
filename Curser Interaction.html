@@ -197,7 +197,6 @@
             particle.position.x = particle.shift.x + Math.cos(i + particle.offset.x) * (particle.orbit * RADIUS_SCALE);
             particle.position.y = particle.shift.y + Math.sin(i + particle.offset.y) * (particle.orbit * RADIUS_SCALE);
 
-            // Limit to screen bounds
             particle.position.x = Math.max(Math.min(particle.position.x, SCREEN_WIDTH), 0);
             particle.position.y = Math.max(Math.min(particle.position.y, SCREEN_HEIGHT), 0);
 
