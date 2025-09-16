@@ -180,7 +180,6 @@
 
         RADIUS_SCALE = Math.min(RADIUS_SCALE, RADIUS_SCALE_MAX);
 
-        // Reduce the opacity of the background to create a trailing effect
         context.fillStyle = 'rgba(0,0,0,0.05)';
         context.fillRect(0, 0, context.canvas.width, context.canvas.height);
 
@@ -189,7 +188,6 @@
 
             var lp = { x: particle.position.x, y: particle.position.y };
 
-            // Rotation
             particle.offset.x += particle.speed;
             particle.offset.y += particle.speed;
 
