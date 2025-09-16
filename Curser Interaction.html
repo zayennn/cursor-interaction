@@ -191,11 +191,9 @@
             particle.offset.x += particle.speed;
             particle.offset.y += particle.speed;
 
-            // Follow mouse with some lag
             particle.shift.x += (mouseX - particle.shift.x) * (particle.speed);
             particle.shift.y += (mouseY - particle.shift.y) * (particle.speed);
 
-            // Apply position
             particle.position.x = particle.shift.x + Math.cos(i + particle.offset.x) * (particle.orbit * RADIUS_SCALE);
             particle.position.y = particle.shift.y + Math.sin(i + particle.offset.y) * (particle.orbit * RADIUS_SCALE);
 
